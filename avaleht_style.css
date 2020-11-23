@@ -1,0 +1,64 @@
+html,body {
+    margin: 0;
+}
+body {
+    text-align: center;
+    background-image: url('https://cdn.discordapp.com/attachments/484899683458744321/780414133677588511/IMG_7399.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+}
+.menüü {
+    width: 100%;
+    text-align: center;
+}
+.menüü ul {
+    display: inline-block;
+}
+.navbar {
+    padding-right: 0px;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgba(44, 44, 44, 0.5);
+    float: left;
+    width: 50%;
+}
+.navbar2 {
+    padding-left: 0px;
+    overflow: hidden;
+    background-color: rgba(44, 44, 44, 0.5);
+    margin: 0;
+    float: right;
+    width: 47.9%;
+    height: 69px;
+}
+  
+.navbar li {
+    display: inline;
+    float: left;
+    height: 69px;
+}
+  .navbar2 li {
+    display: inline;
+    float: right;
+}
+.navbar li a {
+    float:left;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    transition: 1s; 
+}
+.navbar li a:hover, .navbar2 li a:hover {
+    background-color: rgb(100, 100, 100);
+}
+.navbar2 li a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: 1s;
+}
