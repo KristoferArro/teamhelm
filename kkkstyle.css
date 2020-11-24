@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin: 30px 0 50px;
+  opacity: 0.3;
+}
+
+.menüü {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
