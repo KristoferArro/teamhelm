@@ -90,6 +90,10 @@ h1, h2, h3 {
     width:100%;
 }
 .toetajad {
+    background-color: rgba(44, 44, 44, 0.85);
+    padding: 100px;
+    width: 75%;
+    margin: auto;
     display: flex;
     margin: auto;
     justify-content: center;

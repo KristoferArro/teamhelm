@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stat_style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="logo.png">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="sorteeri.js"></script>
     <title>Team Helm statistika</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <ul class="navbar">
           <li><img alt="Logo" src="https://cdn.discordapp.com/attachments/484899683458744321/780419360162054144/512x512.png" width="70" height="70"></li>
           <li><a href="avaleht.html">Avaleht</a></li>
-          <li><a href="#">Mängijad</a></li>
+          <li><a href="mangijad.html">Mängijad</a></li>
           <li><a href="statistika.html">Statistika</a></li>
           <li><a href="galerii.html">Galerii</a></li>
           <li><a href="KKK.html">KKK</a></li>
@@ -25,23 +26,67 @@
             <img alt="Instagram" src="https://cdn.discordapp.com/attachments/484899683458744321/780413544150597642/social-instagram-new-circle-512.png" width="30" height="30"></a></li>
         </ul>
     </div>
-    <div>
-        <h1>Team Helm statistika</h1>
-        <p class="record">Team Helmi võidud/viigid/kaotused: 50/11/22</p>
+    <div class=saldo>
+        <h1>Team Helm statistika läbi aegade</h1>
+        <p class="record">Võidud/viigid/kaotused: 50/11/22</p>
     </div>
-    <div>
-        <table class="värav">
-            <tr>
-                <th></th>
-                <th>Mängija</th>
-                <th>Väravaid</th>
-            </tr>
-            <tr>
-                <th>1</th>
-                <th>Renee Püvi</th>
-                <th>40</th>
-            </tr>
+    <table id="sorteeritav" class="tabel">
+        <thead>
+        <tr>
+            <th class="nr"></th>
+            <th class="nimi">Nimi</th>
+            <th onclick="sorteeri(2)" class="mängud">Mänge</th>
+            <th onclick="sorteeri(3)" class="väravad">Väravaid</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>1.</td><td>Kristofer Johan Arro</td><td>82</td><td>10</td></tr>
+        <tr><td>2.</td><td>Aaron Kants</td><td>78</td><td>10</td></tr>
+        <tr><td>3.</td><td>Renee Püvi</td><td>74</td><td>40</td></tr>
+        <tr><td>4.</td><td>Karl Erik Ott</td><td>71</td><td>18</td></tr>
+        <tr><td>5.</td><td>Robin Sova</td><td>67</td><td>1</td></tr>
+        <tr><td>6.</td><td>Frederik Mathias Helm</td><td>59</td><td>11</td></tr>
+        <tr><td>7.</td><td>Aksel Arna</td><td>45</td><td>5</td></tr>
+        <tr><td>8.</td><td>Ott-Kaarel Vään</td><td>40</td><td>14</td></tr>
+        <tr><td>9.</td><td>Karl Sten Kõks</td><td>37</td><td>4</td></tr>
+        <tr><td>10.</td><td>Joonas Raidvee</td><td>37</td><td>4</td></tr>
+        <tr><td>11.</td><td>Martin Piilberg</td><td>31</td><td>6</td></tr>
+        <tr><td>12.</td><td>Sass Vedler</td><td>30</td><td>7</td></tr>
+        <tr><td>13.</td><td>Erik Vaarmann</td><td>28</td><td>0</td></tr>
+        <tr><td>14.</td><td>Marcus Saksing</td><td>28</td><td>25</td></tr>
+        <tr><td>15.</td><td>Siim Maidla</td><td>28</td><td>4</td></tr>
+        <tr><td>16.</td><td>Rasmus Luha</td><td>26</td><td>2</td></tr>
+        <tr><td>17.</td><td>Roland Liinar</td><td>26</td><td>6</td></tr>
+        <tr><td>18.</td><td>Sander Künnapuu</td><td>24</td><td>0</td></tr>
+        <tr><td>19.</td><td>Erik Markos Poska</td><td>23</td><td>1</td></tr>
+        <tr><td>20.</td><td>Mikk Raid</td><td>21</td><td>2</td></tr>
+        <tr><td>21.</td><td>Kristjan Vent</td><td>21</td><td>0</td></tr>
+        <tr><td>22.</td><td>Simmo Silm</td><td>20</td><td>5</td></tr>
+        <tr><td>23.</td><td>Mikk Toom</td><td>18</td><td>2</td></tr>
+        <tr><td>24.</td><td>Kristjan Põldmaa</td><td>18</td><td>4</td></tr>
+        <tr><td>25.</td><td>Dagnar Engel</td><td>16</td><td>0</td></tr>
+        <tr><td>26.</td><td>Jakob Mägi</td><td>16</td><td>10</td></tr>
+        <tr><td>27.</td><td>Karl Albert Türn</td><td>13</td><td>1</td></tr>
+        <tr><td>28.</td><td>Rico Reinoja</td><td>12</td><td>4</td></tr>
+        <tr><td>29.</td><td>Karl Johannes Kõiv</td><td>11</td><td>0</td></tr>
+        <tr><td>30.</td><td>Rasmus Enno</td><td>11</td><td>1</td></tr>
+        <tr><td>31.</td><td>Robert Leht</td><td>10</td><td>5</td></tr>
+        <tr><td>32.</td><td>Aleksander Sarikjan</td><td>9</td><td>0</td></tr>
+        <tr><td>33.</td><td>Joonas Salu</td><td>9</td><td>0</td></tr>
+        <tr><td>34.</td><td>Jaan Tobias Salu</td><td>9</td><td>0</td></tr>
+        <tr><td>35.</td><td>Tristan Roosipuu</td><td>8</td><td>0</td></tr>
+        <tr><td>36.</td><td>Markkus Suun</td><td>8</td><td>1</td></tr>
+        <tr><td>37.</td><td>Carl Kaiser Kiidjärv</td><td>7</td><td>0</td></tr>
+        <tr><td>38.</td><td>Marten Metsniit</td><td>7</td><td>3</td></tr>
+        <tr><td>39.</td><td>Jakob Tamm</td><td>6</td><td>0</td></tr>
+        <tr><td>40.</td><td>Valeri Makarov</td><td>6</td><td>2</td></tr>
+        <tr><td>41.</td><td>Karl-Erik Kruusmaa</td><td>6</td><td>0</td></tr>
+        <tr><td>42</td><td>Even Luiv</td><td>6</td><td>1</td></tr>
+        <tr><td>43.</td><td>Deimar Pärn</td><td>5</td><td>3</td></tr>
+        <tr><td>44.</td><td>Hudson Taylor Lekunze</td><td>5</td><td>1</td></tr>
+        <tr><td>45.</td><td>Markus Herman Tiik</td><td>5</td><td>1</td></tr>
+        </tbody>
+        </tr>
         </table>
-    </div>
 </body>
 </html>
