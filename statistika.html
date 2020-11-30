@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stat_style.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stat_style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="sorteeri.js"></script>
+    <script src="javascript/sorteeri.js"></script>
+    <!-- Linkin Javascript faili, kus sees funktsioon "sorteeri" -->
     <title>Team Helm statistika</title>
 </head>
 <body>
@@ -36,7 +38,9 @@
             <th class="nr"></th>
             <th class="nimi">Nimi</th>
             <th onclick="sorteeri(2)" class="mängud">Mänge</th>
+            <!-- Kui vajutada "Mänge" peale, pannakse tööle funktsioon sorteeri tulba 2 järgi. -->
             <th onclick="sorteeri(3)" class="väravad">Väravaid</th>
+            <!-- Kui vajutada "Mänge" peale, pannakse tööle funktsioon sorteeri tulba 3 järgi. -->
         </tr>
         </thead>
         <tbody>
@@ -86,7 +90,6 @@
         <tr><td>44.</td><td>Hudson Taylor Lekunze</td><td>5</td><td>1</td></tr>
         <tr><td>45.</td><td>Markus Herman Tiik</td><td>5</td><td>1</td></tr>
         </tbody>
-        </tr>
-        </table>
+      </table>
 </body>
 </html>

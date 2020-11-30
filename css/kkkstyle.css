@@ -1,16 +1,10 @@
 h1 {
   text-align: center;
-  color: white;
-  margin: 30px 0 50px;
+  color: rgb(239, 102, 167);
+  margin: 30px 50px;
   opacity: 0.8;
-  padding: 90;
+  padding: 90px;
   font-family: "Montserrat";
-}
-
-.menüü {
-  display: flex;
-  position: relative;
-  text-align: center;
 }
 body {
   margin: 0;
@@ -20,61 +14,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
-.menüü {
-  display: flex;
-  position: relative;
-  text-align: center;
-}
-
-.navbar {
-  padding-right: 0px;
-  overflow: hidden;
-  margin: 0;
-  background-color: rgba(44, 44, 44, 0.5);
-  float: left;
-  width: 50%;
-}
-.navbar2 {
-  padding-left: 0px;
-  overflow: hidden;
-  background-color: rgba(44, 44, 44, 0.5);
-  margin: 0;
-  float: right;
-  width: 47.85%;
-  height: 69px;
-}
-
-.navbar li {
-  display: inline;
-  float: left;
-  height: 69px;
-  font-family: "Montserrat";
-}
-.navbar2 li {
-  display: inline;
-  float: right;
-}
-.navbar li a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  text-decoration: none;
-  transition: 1s;
-}
-.navbar li a:hover,
-.navbar2 li a:hover {
-  background-color: rgb(100, 100, 100);
-}
-.navbar2 li a {
-  float: right;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  transition: 1s;
-}
-
 .tekst {
   text-align: left;
   background-color: rgb(44, 44, 44, 0.7);
@@ -84,7 +23,6 @@ body {
   width: 75%;
   padding: 1%;
 }
-
 #kix {
   width: auto;
   height: 545px;

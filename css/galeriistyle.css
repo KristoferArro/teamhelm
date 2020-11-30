@@ -1,117 +1,46 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("https://cdn.discordapp.com/attachments/484899683458744321/780414133677588511/IMG_7399.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-body {
-  font-family: 'Montserrat';
-  background-color: rgb(44, 44, 44);
-}
 h1 {
   text-align: center;
-  color: white;
+  color: rgb(239, 102, 167);
   margin: 30px 0 50px;
   opacity: 0.8;
 }
-
 .pikuti {
   width: 24.2%;
   height: auto;
   padding: 5px;
 }
-
 .laiuti {
   width: 49%;
   height: auto;
   padding: 5px;
 }
-#cover:hover {
+.cover:hover {
   transform: scale(1);
 }
-#cover {
+.cover {
   filter: grayscale(0%);
 }
 img {
   filter: grayscale(100%);
   transition: filter 1s, transform 0.4s;
 }
-
 img:hover {
   z-index: 100;
   filter: grayscale(0%);
   transform: scale(1.1);
 }
-
 .galerii div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .galerii {
   width: 90%;
   margin: auto;
 }
-
 .vahe {
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.menüü {
-  display: flex;
-  position: relative;
-  text-align: center;
-}
-
-.navbar {
-  padding-right: 0px;
-  overflow: hidden;
-  margin: 0;
-  background-color: rgba(44, 44, 44, 0.5);
-  float: left;
-  width: 50%;
-}
-.navbar2 {
-  padding-left: 0px;
-  overflow: hidden;
-  background-color: rgba(44, 44, 44, 0.5);
-  margin: 0;
-  float: right;
-  width: 47.85%;
-  height: 69px;
-}
-
-.navbar li {
-  display: inline;
-  float: left;
-  height: 69px;
-}
-.navbar2 li {
-  display: inline;
-  float: right;
-}
-.navbar li a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  text-decoration: none;
-  transition: 1s;
-}
-.navbar li a:hover,
-.navbar2 li a:hover {
-  background-color: rgb(100, 100, 100);
-}
-.navbar2 li a {
-  float: right;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  transition: 1s;
 }
